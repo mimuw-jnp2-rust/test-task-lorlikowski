@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "test",
+      "setup": "",
+      "run": "cargo test --verbose",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "clippy & rustfmt",
+      "setup": "",
+      "run": "cargo clippy --all-targets --all-features --verbose -- -D warnings && cargo fmt --check --verbose",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
