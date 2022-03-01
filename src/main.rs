@@ -3,7 +3,9 @@ fn test() -> bool {
 }
 
 fn main() {
-    println!("Hello, world!");
+    if test() {
+      println!("Hello, world!");
+   }
 }
 
 #[cfg(test)]
